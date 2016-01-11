@@ -9,6 +9,7 @@ setup(
 	author_email='yoshio.okumura@gmail.com',
 	ext_modules = [
 		Extension('_rescle', ['rescle.i', 'rescle.cpp'],
+			swig_opts=['-c++'],
 			library_dirs=[],
 			libraries=[],
 			extra_compile_args=['/D_UNICODE', '/DUNICODE'],
