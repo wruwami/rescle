@@ -5,22 +5,21 @@ Command line resource editor for Windows PE format file.
 
 Rescle(RESource Command Line Editor) is not a resource compiler, but poweful tool for Windows application developers.
 
-Purpose
-
+## Purpose
 customize resource without build
 i.e. for multi-distribution products
 Features
 
 You can edit resouces at x86/x64 PE files (EXE/DLL/OCX..). * Version Information * String Table * Manifest * Icon * Bitmap * Cursor * Any Binary
 
-Limitations
-
+## Limitations
 works on windows only
 command line interface
 but you can do it to edit update.py
 cannot change binary same resource id but language is different
 digital signed PE files is not supported
-Sample
+
+## Sample
 
 Now, you can edit resource from Python script, but it is not supported from command line.
 
@@ -56,6 +55,7 @@ if ru.Load( sys.argv[1] ): lang_id = 1033
     ru.Commit()
 ```
 
+## Setup
 Install from source python setup.py build_ext python setup.py build python setup.py install
 
 Run python update.py your.exe
