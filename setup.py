@@ -7,6 +7,7 @@ setup(
 	description='Rescle(RESource Command Line Editor) is not a resource compiler, but poweful tool for Windows application developers. ',
 	author='OKUMURA Yoshio',
 	author_email='yoshio.okumura@gmail.com',
+	license="new BSD",
 	ext_modules = [
 		Extension('_rescle', ['rescle.i', 'rescle.cpp'],
 			swig_opts=['-c++'],
@@ -14,4 +15,6 @@ setup(
 			libraries=[],
 			extra_compile_args=['/D_UNICODE', '/DUNICODE'],
 			extra_link_args=[])
-		])
+		],
+	py_modules=["rescle"],
+	)
