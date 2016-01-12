@@ -55,7 +55,6 @@ if ru.Load( sys.argv[1] ): lang_id = 1033
     ru.Commit()
 ```
 
-## Setup
 Install from source python setup.py build_ext python setup.py build python setup.py install
 
 Run python update.py your.exe
