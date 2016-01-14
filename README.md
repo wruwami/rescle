@@ -25,6 +25,7 @@ Now, you can edit resource from Python script, but it is not supported from comm
 
 Python code
 
+```
 -- coding: utf-8 --
 
 import sys import rescle
@@ -54,9 +55,16 @@ if ru.Load( sys.argv[1] ): lang_id = 1033
     ru.ChangeVersionProductVersion( lang_id, version_id, 9, 10, 11, 12 )
 
     ru.Commit()
+```
 
 # Setup
-Install from source python setup.py build_ext python setup.py build python setup.py install
+Install from source 
+
+```
+python setup.py build_ext 
+python setup.py build 
+python setup.py install
+```
 
 # Run
 Run python update.py your.exe
